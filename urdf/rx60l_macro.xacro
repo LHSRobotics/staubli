@@ -15,7 +15,7 @@
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
 				<geometry>
-					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb.dae" scale="0.001 0.001 0.001"/>
+					<mesh filename="package://staubli/meshes/rx60l/collision/rx60bl_hb.stl" scale="0.001 0.001 0.001"/>
 				</geometry>
 				<material name="Blue">
 					<color rgba="0 0 255 1.0"/>
