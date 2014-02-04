@@ -77,7 +77,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: /Staubli_RX60L_Link1
+    Fixed Frame: /staubli_rx60l_link1
   Name: root
   Tools:
     - Class: rviz/Interact
