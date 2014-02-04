@@ -14,6 +14,10 @@ So I would run:
 Then with that set up you can pull this repository to ```/var/robot/src/```
 To display the robot, run the launch file with:
 
-  ```roslaunch display.launch model:=urdf/rx60l.urdf gui:=true```
+  ```roslaunch staubli display.launch model:=urdf/rx60l.urdf gui:=true```
+
+or:
+
+  ```roslaunch staubli test_rx60l.launch```
 
 [ROS-Industrial]: http://www.ros.org/wiki/Industrial
