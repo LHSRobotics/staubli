@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:macro name="staubli_rx60l" params="prefix">
+		<!-- links -->
+		<link name="${prefix}staubli_rx60l_link1">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Yellow">
+					<color rgba="245 196 0 1.0"/>
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/collision/rx60bl_hb.stl" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Blue">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</collision>
+		</link>
+		<link name="${prefix}staubli_rx60l_link2">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb1.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Yellow">
+					<color rgba="245 196 0 1.0"/>
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb1.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Green">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</collision>
+		</link>	
+		<link name="${prefix}staubli_rx60l_link3">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb2.stl" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="White">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb2.stl" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Blue">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</collision>
+		</link>
+		<link name="${prefix}staubli_rx60l_link4">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb3.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Red">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb3.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Blue">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</collision>
+		</link>
+		<link name="${prefix}staubli_rx60l_link5">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb4.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Blue">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb4.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Blue">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</collision>
+		</link>
+		<link name="${prefix}staubli_rx60l_link6">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb5.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Blue">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb5.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Blue">
+					<color rgba="0 0 255 1.0"/>
+				</material>
+			</collision>
+		</link>
+		<link name="${prefix}staubli_rx60l_link7">
+			<visual>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb6.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Gray">
+					<color rgba="100 100 100 1.0"/>
+				</material>
+			</visual>
+			<collision>
+				<origin xyz="0 0 0" rpy="0 0 0"/>
+				<geometry>
+					<mesh filename="package://staubli/meshes/rx60l/visual/rx60bl_hb6.dae" scale="0.001 0.001 0.001"/>
+				</geometry>
+				<material name="Gray">
+					<color rgba="100 100 100 1.0"/>
+				</material>
+			</collision>
+		</link>
+		<link name="${prefix}staubli_rx60l_tool0"/>
+
+		<!-- joints -->
+		<joint name="${prefix}joint_1" type="revolute">
+			<origin xyz="0 0 0"/>
+			<parent link="${prefix}staubli_rx60l_link1"/>
+			<child link="${prefix}staubli_rx60l_link2"/>
+			<axis xyz="0 0 1"/>
+			<limit effort="100" velocity="5.009094953" lower="-2.792526803" upper="2.792526803"/>
+		</joint>
+		<joint name="${prefix}joint_2" type="revolute">
+			<origin xyz="0 0 0.341"/>
+			<parent link="${prefix}staubli_rx60l_link2"/>
+			<child link="${prefix}staubli_rx60l_link3"/>
+			<axis xyz="0 1 0"/>
+			<limit effort="100" velocity="5.009094953" lower="-2.225294796" upper="2.225294796"/>
+		</joint>
+		<joint name="${prefix}joint_3" type="revolute">
+			<origin xyz="0 0.049 0.400"/>
+			<parent link="${prefix}staubli_rx60l_link3"/>
+			<child link="${prefix}staubli_rx60l_link4"/>
+			<axis xyz="0 1 0"/>
+			<limit effort="100" velocity="5.567600314" lower="-2.347467844" upper="2.347467844"/>
+		</joint>
+		<joint name="${prefix}joint_4" type="revolute">
+			<origin xyz="0 0 0"/>
+			<parent link="${prefix}staubli_rx60l_link4"/>
+			<child link="${prefix}staubli_rx60l_link5"/>
+			<axis xyz="0 0 1"/>
+			<limit effort="100" velocity="7.155849933" lower="-4.71238898" upper="4.71238898"/>
+		</joint>
+		<joint name="${prefix}joint_5" type="revolute">
+			<origin xyz="0 0 0.400"/>
+			<parent link="${prefix}staubli_rx60l_link5"/>
+			<child link="${prefix}staubli_rx60l_link6"/>
+			<axis xyz="0 1 0"/>
+			<limit effort="100" velocity="5.585053606" lower="-1.911135531" upper="2.103121749"/>
+		</joint>	
+		<joint name="${prefix}joint_6" type="revolute">
+			<origin xyz="0 0 0.065"/>
+			<parent link="${prefix}staubli_rx60l_link6"/>
+			<child link="${prefix}staubli_rx60l_link7"/>
+			<axis xyz="0 0 1"/>
+			<limit effort="100" velocity="12.217304764" lower="-4.71238898" upper="4.71238898"/>
+		</joint>
+		<joint name="${prefix}joint_6-tool0" type="fixed">
+			<parent link="${prefix}staubli_rx60l_link7"/>
+			<child link="${prefix}staubli_rx60l_tool0"/>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+		</joint>
+	</xacro:macro>
+</robot>

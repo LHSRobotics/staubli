@@ -1,31 +1,25 @@
 <package>
+  <name>staubli</name>
+  <version>0.1.0</version>
   <description>
-
      staubli
-
   </description>
 
   <author>root</author>
   <maintainer email="mentaris@gmail.com">mentar</maintainer>
-  <name>staubli</name>
-  <version>0.1.0</version>
   <license>BSD</license>
 
-<!--  <review status="unreviewed" notes=""/> -->
-  <url>http://hack.rs/w/Robotics</url>
-<!--  <depend package="std_msgs"/>
-  <depend package="roscpp"/>
-  <depend package="actionlib" />
-  <depend package="trajectory_msgs"/>
-  <depend package="actionlib_msgs" />
-  <depend package="control_msgs" />
-  <depend package="sensor_msgs" />
-  <depend package="simple_message" />
-  <depend package="urdf" /> -->
+  <url type="website">http://hack.rs/w/Robotics</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>pr2_description</run_depend>
 
   <export>
-    <cpp cflags="-I${prefix}/include/"/>
+    <architecture_independent />
   </export>
-
 </package>
-
